@@ -1,9 +1,12 @@
-import { HomePage } from "./pages/HomePage/HomePage";
+import { HomePage } from "./pages/HomePage";
+import { GlobalStyles } from "./theme/GlobalStyles";
+
 
 function App() {
   return (
     <>
-    <HomePage />
+      <HomePage />
+      <GlobalStyles />
     </>
   );
 }
