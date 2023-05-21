@@ -39,6 +39,7 @@ export const HomePage = () => {
 
     const resetPokemon = () => {
         setListPokemon(allListPokemon)
+        setValueChange('')
     }
 
     useEffect(() => {
