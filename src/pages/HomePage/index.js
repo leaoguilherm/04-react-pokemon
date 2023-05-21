@@ -20,7 +20,8 @@ export const HomePage = () => {
 
             return {
                 name: pokemonData.name,
-                imagemUrl: pokemonData.sprites.front_default
+                imagemUrl: pokemonData.sprites.front_default,
+
             }
         }))
         setListPokemon(updateList)
