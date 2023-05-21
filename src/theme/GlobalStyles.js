@@ -14,4 +14,8 @@ export const GlobalStyles = createGlobalStyle`
         height: 100vh;
         background: ${background};
     }
+
+    #root {
+        height: 100vh;
+    }
 `
