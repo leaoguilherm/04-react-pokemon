@@ -15,12 +15,29 @@ export const ContainerInput = styled.div`
 export const ContainerSearch = styled.div`
     display: flex;
     gap: 6px; 
+
+    @media screen and (max-width: 890px) {
+            justify-content: center;
+    }
+
+    @media screen and (max-width: 500px) {
+            flex-direction: column;
+            align-items: center;
+    }
 `
+export const ContainerButton = styled.div`
+    display: flex;
+    gap: 5px;
+`
+
 export const ContainerPokemon = styled.div`
     display: flex;
-    justify-content: flex-start;
     flex-wrap: wrap;
     gap: 20px;
     margin-top: 20px;
     padding-bottom: 22px;
+
+    @media screen and (max-width: 1218px) {
+            justify-content: center;
+    }
 `

@@ -7,6 +7,7 @@ export const HeaderStyle = styled.header`
     justify-content: center;
     padding: 12px 0px 12px 0px;
     border-radius: 0px 0px 15px 15px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
 `
 
 export const LogoStyle = styled.img`

@@ -1,5 +1,5 @@
 
-import { ContainerCards } from "./styles"
+import { ContainerCards, Name } from "./styles"
 
 
 export const Cards = ({ listPokemon }) => {
@@ -9,11 +9,10 @@ export const Cards = ({ listPokemon }) => {
                 return (
                     <ContainerCards key={pokemon.name}>
                         <img src={pokemon.imagemUrl} alt="Imagem Pokemon"></img>
-                        <div>{pokemon.name}</div>
+                        <Name>{pokemon.name}</Name>
                     </ContainerCards>
                 )
             })}
-
         </>
     )
 }

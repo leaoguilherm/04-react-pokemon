@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import { Button } from "../../components/Button"
 import { Cards } from "../../components/Cards"
 import { Input } from "../../components/Input"
-import { ContainerHome, ContainerInput, ContainerPokemon, ContainerSearch } from "./styles"
+import { ContainerButton, ContainerHome, ContainerInput, ContainerPokemon, ContainerSearch } from "./styles"
 import { getApi, getPokemon } from "../../api/pokeApi"
 
 export const HomePage = () => {
@@ -45,16 +45,18 @@ export const HomePage = () => {
     useEffect(() => {
         loadPage()
     }, [])
-    
+
     return (
         <>
             <ContainerHome>
                 <ContainerSearch>
                     <ContainerInput>
-                        <Input placeholder="Pesquisar" label="Buscar" onChange={handleChange} value={valueChange} />
+                        <Input label="Buscar" onChange={handleChange} value={valueChange} />
                     </ContainerInput>
-                    <Button onclick={filterPokemon}>Buscar</Button>
-                    <Button onclick={resetPokemon}>Limpar Busca</Button>
+                    <ContainerButton>
+                        <Button onclick={filterPokemon}>Buscar</Button>
+                        <Button onclick={resetPokemon}>Limpar Busca</Button>
+                    </ContainerButton>
                 </ContainerSearch>
 
                 <ContainerPokemon>

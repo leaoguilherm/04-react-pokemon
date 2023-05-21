@@ -5,4 +5,8 @@ export const MainStyle = styled.main`
     display: flex;
     justify-content: center;
     padding: 30px 100px 0px 100px;
+
+    @media screen and (max-width: 888px) {
+        padding: 30px 10px 0px 10px;
+    }
 `
