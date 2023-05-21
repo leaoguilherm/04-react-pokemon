@@ -1,6 +1,7 @@
 import { Button } from "../../components/Button"
+import { Cards } from "../../components/Cards"
 import { Input } from "../../components/Input"
-import { ContainerHome, ContainerInput, ContainerSearch } from "./styles"
+import { ContainerHome, ContainerInput, ContainerPokemon, ContainerSearch } from "./styles"
 
 export const HomePage = () => {
     return (
@@ -12,6 +13,25 @@ export const HomePage = () => {
                     </ContainerInput>
                     <Button>Buscar</Button>
                 </ContainerSearch>
+
+                <ContainerPokemon>
+                    <Cards/>
+                    <Cards/>
+                    <Cards/>
+                    <Cards/>
+                    <Cards/>
+                    <Cards/>
+                    <Cards/>
+                    <Cards/>
+                    <Cards/>
+                    <Cards/>
+                    <Cards/>
+                    <Cards/>
+                    <Cards/>
+                    <Cards/>
+                    <Cards/>
+                    <Cards/>
+                </ContainerPokemon>
 
             </ContainerHome>
         </>
