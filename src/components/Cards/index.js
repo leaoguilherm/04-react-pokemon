@@ -1,11 +1,19 @@
+
 import { ContainerCards } from "./styles"
 
 
-export const Cards = () => {
+export const Cards = ({ listPokemon }) => {
     return (
-        <ContainerCards>
-            <div>Image</div>
-            <div>Name</div>
-        </ContainerCards>
+        <>
+            {listPokemon?.map((pokemon) => {
+                return (
+                    <ContainerCards key={pokemon.name}>
+                        <img src={pokemon.imagemUrl} alt="Imagem Pokemon"></img>
+                        <div>{pokemon.name}</div>
+                    </ContainerCards>
+                )
+            })}
+
+        </>
     )
 }

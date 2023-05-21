@@ -6,9 +6,7 @@ export const ContainerCards = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px 35px 20px 35px;
+    padding: 15px 28px 15px 28px;
     background-color: ${gray};
     border-radius: 20px;
-    height: 150px;
-    width: 150px;
 `

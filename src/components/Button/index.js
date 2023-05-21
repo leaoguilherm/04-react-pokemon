@@ -1,8 +1,8 @@
 import { ButtonStyle } from "./styles";
 
 
-export const Button = ({children}) => {
+export const Button = ({onclick, children}) => {
     return (
-        <ButtonStyle>{children}</ButtonStyle>
+        <ButtonStyle onClick={onclick}>{children}</ButtonStyle>
     )
 }
